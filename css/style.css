@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    }
+
+    body {
+        width: 100%;
+        min-height: 100vh;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .instagram-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 83%;
+        height: 100vh;
+    }
+
+    .instagram-phone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+    }
+
+    .instagram-phone img {
+        height: 47rem;
+    }
+
+    .instagram-continue {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 50%;
+        min-height: 37rem;
+    }
+
+    .group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        padding: 1.3rem 0;
+        border: 1px solid lightgray    
+
+    }
+
+    .group:nth-child(1) {
+        min-height: 19rem;
+    }
+
+    .instagram-logo{
+        height: 3rem;
+    }
+
+
+    .profile-photo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        overflow: hidden;
+
+    }
+
+    .profile-photo img {
+        height: 6rem;
+    }
+
+    .instagram-login{
+        background-color: #0095f6;
+        color: #ffffff;
+        padding: 8px;
+        border-radius: 4px;
+    }
+
+    .instagram-logout {
+        color: #0095f6;
+        margin-top: 1rem;
+    }
+
+    .not-account {
+        color: lightgrey;
+    }
+
+    
+
+    .link-blue {
+        color: #0095f6;
+    }
+
+    .get-the-app { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        padding: 1.3rem 0;
+    }
+
+    .download{
+        display: flex;
+        width: 80%;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1.3rem;
+    }
+
+    .app-download {
+        padding-top: 50px;
+        height: 6rem;
+        width: 11rem;
+        background-size: cover;
+        padding-bottom: 50px;
+    }
+
+    .app-download:nth-child(1) {
+        background-image: url('./img/Dois.png');
+    }
+
+    @media (max-width: 1023px) {
+        .instagram-wrapper{
+            width: 70%;
+        }
+    }
+
+    @media (max-width: 650px) {
+           .body{
+            background-color: #ffffff;
+           }
+
+        .instagram-wrapper{
+            width: 70%;
+        }
+
+        .instagram-phone{
+            display: none;
+        }
+
+        .instagram-continue{
+            width: 150%;
+        }
+
+        .group {
+            border: 1px solid transparent
+        }
+    }
